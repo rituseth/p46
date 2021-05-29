@@ -17,7 +17,7 @@ this but the monsters ( diseases) will increase by 2
   const World = Matter.World;
   const Bodies = Matter.Bodies;
   const Constraint = Matter.Constraint;
-  const Render = Matter.Render;
+  //const Render = Matter.Render;
   var engine, world;
   var g ,g2,g3,g4,g5
   var f1,f2,f3,f4,f5,f6
@@ -58,15 +58,15 @@ var hBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.3, isStatic:true});
 
 
 
-    var render = Render.create({
-		element: document.body,
-		engine: engine,
-		options: {
-		  width: 800,
-		  height: 700,
-		  wireframes: false
-		}
-	  });
+   // var render = Render.create({
+		//element: document.body,
+		//engine: engine,
+	//	options: {
+		//  width: 800,
+//height: 700,
+		 // wireframes: false
+	//	}
+	//  });
  Render.run(render); 
  Engine.run(engine);
 }
